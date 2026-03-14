@@ -37,7 +37,7 @@
         "duration": {
             "type": "float",
             "name": "Duration",
-            "default": 0.5,
+            "default": 0.7,
             "min": 0,
             "max": 2,
             "control": {

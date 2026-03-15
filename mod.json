@@ -7,7 +7,7 @@
         "ios": "2.2081"
     },
 
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "id": "undefined0.custom-transitions",
     "name": "Custom Transitions",
     "developer": "undefined0",
@@ -50,7 +50,7 @@
             "type": "float",
             "name": "Edge size",
             "description": "The percentage of time that is spent fading between solid and transparent.\n\n0 means each pixel will snap as soon as the threshold is reached, 0.5 means each pixel will take half the time to go between invisible and solid once the threshold is reached.",
-            "default": 0.25,
+            "default": 0.15,
             "min": 0.0,
             "max": 1.0,
             "control": {

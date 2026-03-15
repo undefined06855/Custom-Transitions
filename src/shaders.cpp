@@ -52,7 +52,7 @@ void main() {
 
 bool g_transitionShaderFailedToLoad = false;
 
-void loadShaders() {
+$on_game(TexturesLoaded) {
     auto program = new cocos2d::CCGLProgram;
     bool ret = program->initWithVertexShaderByteArray(g_transitionShaderVertex, g_transitionShaderFragment);
     if (!ret) {
@@ -72,12 +72,4 @@ void loadShaders() {
     geode::log::info("are you ready to sog up your transitions");
 
     cocos2d::CCShaderCache::sharedShaderCache()->addProgram(program, "transition_fade_shader"_spr);
-}
-
-$on_game(TexturesLoaded) {
-    loadShaders();
-}
-
-$on_mod(Loaded) {
-    loadShaders();
 }

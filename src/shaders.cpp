@@ -31,8 +31,13 @@ uniform sampler2D CC_Texture0;
 
 uniform float u_edgeSize;
 
+// https://gist.github.com/yiwenl/1c2ce935e66b82c7df5f
 float grayscale(vec4 color) {
     return dot(color.rgb, vec3(0.299, 0.587, 0.114));
+}
+
+float ease(float t) {
+    return sin((t * 3.1416) / 2.0);
 }
 
 void main() {
@@ -42,8 +47,7 @@ void main() {
     }
 
     float gray = grayscale(texture2D(CC_Texture0, v_texCoord));
-
-    float t = clamp((v_fragmentColor.a + u_edgeSize - gray) / (2.0 * u_edgeSize), 0.0, 1.0); // no idea how this works
+    float t = clamp((ease(v_fragmentColor.a) + u_edgeSize - gray) / (2.0 * u_edgeSize), 0.0, 1.0); // no idea how this works
     float alpha = mix(0.0, 1.0, t);
 
     gl_FragColor = vec4(v_fragmentColor.rgb, alpha);

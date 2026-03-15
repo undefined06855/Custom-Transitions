@@ -9,3 +9,7 @@ Set the image in the mod settings to an image on your device (or use one of the 
 (you can also customise the length of the transition)
 
 Greyscale images in PNG format are recommended, images will be stretched to fit your screen's aspect ratio.
+
+Built-in image credits:
+- feather.png by hatmix at https://opengameart.org/content/feather-grayscale-transition-image
+- All other images except for sog.png and wibblywobbly.png created by me

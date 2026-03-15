@@ -11,7 +11,7 @@
     "id": "undefined0.custom-transitions",
     "name": "Custom Transitions",
     "developer": "undefined0",
-    "description": "Use a greyscale image for a custom fade transition!",
+    "description": "Use any image for a custom fade transition!",
     "tags": [ "customization", "enhancement", "interface" ],
 
     "links": {
@@ -26,18 +26,18 @@
         "image-path": {
             "type": "file",
             "name": "Image",
-            "default": "{mod_resources_dir}/wibblywobbly.png",
+            "default": "{mod_config_dir}/wibblywobbly.png",
             "control": {
                 "dialog": "open",
                 "filters": [{
-                    "files": [ ".png", ".jpg", ".tiff" ]
+                    "files": [ "*.png", "*.jpg", "*.tiff" ]
                 }]
             }
         },
         "duration": {
             "type": "float",
             "name": "Duration",
-            "default": 0.7,
+            "default": 0.6,
             "min": 0,
             "max": 2,
             "control": {
@@ -50,7 +50,7 @@
             "type": "float",
             "name": "Edge size",
             "description": "The percentage of time that is spent fading between solid and transparent.",
-            "default": 0.1,
+            "default": 0.25,
             "min": 0.0,
             "max": 1.0,
             "control": {

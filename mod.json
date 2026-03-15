@@ -49,7 +49,7 @@
         "edge-size": {
             "type": "float",
             "name": "Edge size",
-            "description": "The percentage of time that is spent fading between solid and transparent.",
+            "description": "The percentage of time that is spent fading between solid and transparent.\n\n0 means each pixel will snap as soon as the threshold is reached, 0.5 means each pixel will take half the time to go between invisible and solid once the threshold is reached.",
             "default": 0.25,
             "min": 0.0,
             "max": 1.0,

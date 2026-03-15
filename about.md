@@ -12,4 +12,5 @@ Greyscale images in PNG format are recommended, images will be stretched to fit 
 
 Built-in image credits:
 - feather.png by hatmix at https://opengameart.org/content/feather-grayscale-transition-image
-- All other images except for sog.png and wibblywobbly.png created by me
+- wibblywobbly.png and pixelhash.png unsure
+- All other images except for sog.png created by me

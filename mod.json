@@ -26,7 +26,7 @@
         "image-path": {
             "type": "file",
             "name": "Image",
-            "default": "{mod_config_dir}/wibblywobbly.png",
+            "default": "{mod_config_dir}/pixelhash.png",
             "control": {
                 "dialog": "open",
                 "filters": [{
@@ -37,7 +37,7 @@
         "duration": {
             "type": "float",
             "name": "Duration",
-            "default": 0.6,
+            "default": 0.4,
             "min": 0,
             "max": 2,
             "control": {

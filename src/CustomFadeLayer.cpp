@@ -16,7 +16,7 @@ bool CustomFadeLayer::initWithColor(const cocos2d::ccColor4B& color) {
 
     this->setShaderProgram(cocos2d::CCShaderCache::sharedShaderCache()->programForKey("transition_fade_shader"_spr));
 
-    auto path = geode::utils::string::pathToString(geode::Mod::get()->getSettingValue<std::filesystem::path>("image-path"));
+    auto path = geode::Mod::get()->getSettingValue<asp::fs::Path>("image-path");
     m_texture = cocos2d::CCTextureCache::get()->addImage(path.c_str(), true);
 
     if (!m_texture) {

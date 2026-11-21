@@ -16,4 +16,5 @@ Built-in image credits:
 - feather.png by hatmix at https://opengameart.org/content/feather-grayscale-transition-image
 - bubbles.png, curtain.png, heart.png, lock.png, saw.png, spiky.png and stars.png from Celeste (would recommend setting edge size to 0!)
 - wibblywobbly.png and pixelhash.png from Soulcreek
+- fabric.png from Bunkermen Blues
 - All other images except for sog.png created by me

@@ -6,7 +6,7 @@ $on_game(Loaded) {
 
     std::error_code ec;
 
-    auto path = geode::utils::string::pathToString(geode::Mod::get()->getSettingValue<std::filesystem::path>("image-path"));
+    auto path = geode::Mod::get()->getSettingValue<asp::fs::Path>("image-path");
     auto texture = cocos2d::CCTextureCache::get()->addImage(path.c_str(), true);
 
     // i think these are the most arbitrary ive made popup text colours before
